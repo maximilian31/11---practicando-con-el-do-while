@@ -1,0 +1,33 @@
+/*
+Realizar un programa que acumule (sume) valores ingresados por teclado hasta ingresar el 9999
+(no sumar dicho valor, indica que ha finalizado la carga). Imprimir el valor acumulado e 
+informar si dicho valor es cero, mayor a cero o menor a cero.
+*/
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+   int suma,valor;
+   do
+   {
+       cout << "Ingrese un valor (9999 para finalizar la carga): ";
+       cin >> valor;
+       suma = suma + valor ;
+   } while (valor !=9999); //Si ingreso 9999 termina esta parte
+  if(valor = 9999){
+      suma = suma - 9999;
+  }
+  cout << "El valor total es: " << suma << endl;
+  if(suma < 0)
+     {
+       cout << "Y es menor a 0" << endl;
+     } else if(suma > 0) {
+       cout << "Y es mayor a 0" << endl;
+     } else {
+       cout << "Y es igual a 0" << endl;
+     }
+     
+}
